@@ -42,13 +42,13 @@ stages:
     steps:
     - task: AzureRmWebAppDeployment@3
       inputs:
-        azureSubscription: 'Microsoft Sponsorship'
+        azureSubscription: 'Microsoft Azure Sponsorship 2(e7c83944-66ae-4742-ab11-888e1872ff6f)'
         appType: 'applinux'
         WebAppName: 'paweldocker'
         DockerNamespace: '$(containerRegistry)'
         DockerRepository: '$(imageRepository)'
         DockerImageTag: '$(Build.BuildId)'
-        WebAppUri: webAppUrl
+        WebAppUri: 'webAppUrl'
         TakeAppOfflineFlag: true
         UseWebDeploy: true
         RenameFilesFlag: true
